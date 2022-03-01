@@ -1,4 +1,4 @@
-<div>
+<div class="row">
   <% for post in @posts %>
     <div>
       <h4>
@@ -9,8 +9,8 @@
           anonymous
         <% end %>
       </h4>
-      <img src="<%= post.image %>">
+      <img class="img-fluid" src="<%= post.image %>">
       <p><%= post.body %></p>
     </div>
   <% end %>
-</div>
+</div class="row">
